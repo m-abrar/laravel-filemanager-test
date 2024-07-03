@@ -13,3 +13,8 @@ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
 
+
+
+use App\Http\Controllers\PostController;
+
+Route::resource('posts', PostController::class);
